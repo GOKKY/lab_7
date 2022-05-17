@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Поїздник Максим ТЗ-92</title>
+    </head> 
+    <body> 
+        <script type="text/javascript">
+ 
+            function Amount() {
+            var x  = [];
+            var y = 1;
+            while(true){
+
+            var addition = true;
+                for(var a = 2; a < y; a++){
+
+                if(y%a==0){
+
+                addition = false;
+                break;
+                    }
+
+                }
+
+                if (addition){
+
+                x.push(y);
+                }
+
+                y++;
+
+                if(x.length==5){
+
+
+            var sum = 0;
+                for (var z = 0 ; z < x.length; z++){
+
+                sum += x[z];
+
+                }
+                return (sum);
+                break;
+
+                        }
+
+                    }
+
+                }
+            alert(Amount());
+        </script>
+    </body> 
+</html>
